@@ -154,9 +154,7 @@ Also can manage it via CLI if you likely to manage it here:
 
 **Prigeesh**
 Arch Linux | TypeScript | Prisma | PostgreSQL
+
 Always free feel to discuss...
 
-```
-
 ---
-```
