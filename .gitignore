@@ -1,0 +1,12 @@
+# Ignore environment variables
+.env
+
+# Ignore node modules
+node_modules/
+
+# Ignore Prisma generated files
+
+
+# Optional: Ignore other common files
+dist/
+build/

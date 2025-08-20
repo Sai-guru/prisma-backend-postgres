@@ -1,0 +1,9 @@
+now..
+
+can also give native SQL query instead of our cool ts program codes 🥺🥺🥺   prisma.$queryRaw
+param , query , header , body 
+, now to add more data , inside the prismafolder create a file seed.ts 
+...\
+
+
+lets use queries here so that ,,,,,real time know mannnnnnnn......
