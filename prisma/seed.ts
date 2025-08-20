@@ -37,3 +37,4 @@ main()
 }).finally(async () => {
     await prisma.$disconnect();
 });
+//that finally is the good practice as definitely it will disconnect our db and make sure no left over is there to perform....

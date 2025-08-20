@@ -4,70 +4,63 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 const router = Router();
 
-// Create student
+// Create a student info. - POST METHODY
 export const createStudent = router.post("/student",async (req: Request, res: Response) => {
         try {
             const { name, DOB, email } = req.body;
             const student = await prisma.student.create({data: { name, DOB, email },});
             res.status(201).json(student);
-        } catch (error) {
-            res.status(400).json({ error: "Failed to create student", details: error });
+        }catch(err) {
+            res.status(400).json({ err: "Failed to create student", details: err });
         }
     }
 );
 
-// Get all students
+// Get all students info - GET METHOD
 export const getAllStudents = router.get("/students",async (req: Request, res: Response) => {
         try {
             const students = await prisma.student.findMany();
             res.json(students);
-        } catch (error) {
-            res.status(500).json({ error: "Failed to fetch students" });
+        }catch(err) {
+            res.status(500).json({ err: "Failed to fetch students" });
         }
     }
 );
 
-// Get one student
+// Get one student info - GET METHOD
 export const getStudentById = router.get("/student/:id",async (req: Request, res: Response) => {
         try {
             const id = Number(req.params.id);
             const student = await prisma.student.findUnique({ where: { id } });
-            if (!student) return res.status(404).json({ error: "Student not found" });
+            if (!student) return res.status(404).json({ err: "Student not found" });
             res.json(student);
-        } catch (error) {
-            res.status(500).json({ error: "Failed to fetch student" });
+        }catch(err) {
+            res.status(500).json({ err: "Failed to fetch student" });
         }
     }
 );
 
-// Update student
+// Update student info - PUT METHOD
 export const updateStudent = router.put("/student/:id",async (req: Request, res: Response) => {
         try {
             const id = Number(req.params.id);
             const { name, DOB, email } = req.body;
-            const updated = await prisma.student.update({
-                where: { id },
-                data: { name, DOB, email },
-            });
+            const updated = await prisma.student.update({where: { id },data: { name, DOB, email }});
             res.json(updated);
-        } catch (error) {
-            res
-                .status(400)
-                .json({ error: "Failed to update student", details: error });
+        }catch(err){
+            res.status(400).json({ err: "Failed to update student", details: err });
         }
     }
 );
 
-// Delete student
+// Delete student info - DELETE METHOD
 export const deleteStudent = router.delete("/student/:id",async (req: Request, res: Response) => {
         try {
             const id = Number(req.params.id);
             const deleted = await prisma.student.delete({ where: { id } });
             res.json(deleted);
-        } catch (error) {
-            res
-                .status(400)
-                .json({ error: "Failed to delete student", details: error });
+        }catch(err) {
+            res.status(400).json({ err: "Failed to delete student", details: err });
         }
     }
 );
