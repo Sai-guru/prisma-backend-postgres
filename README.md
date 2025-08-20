@@ -153,6 +153,7 @@ Also can manage it via CLI if you likely to manage it here:
 ## 👤 Author
 
 [**Prigeesh**](https://github.com/Sai-guru)
+
 Arch Linux | TypeScript | Prisma | PostgreSQL
 
 Always free feel to discuss...
