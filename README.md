@@ -6,9 +6,7 @@ This project demonstrates schema management, migrations, seeding, and REST API r
 ---
 
 ## 📂 Project Structure
-
 ```
-
 backend-hands-on/
 ├─ dist/              
 ├─ node_modules/
