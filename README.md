@@ -4,9 +4,9 @@ A simple CRUD backend built with **Express**, **TypeScript**, and **Prisma ORM**
 This project demonstrates schema management, migrations, seeding, and REST API routes for a `Student` model.
 ```
 ---
-
-## 📂 Project Structure
 ```
+## 📂 Project Structure
+
 backend-hands-on/
 ├─ dist/              
 ├─ node_modules/
