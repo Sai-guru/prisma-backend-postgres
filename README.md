@@ -2,12 +2,13 @@
 
 A simple CRUD backend built with **Express**, **TypeScript**, and **Prisma ORM**, connected to a **Neon PostgreSQL (cloud DB)**.  
 This project demonstrates schema management, migrations, seeding, and REST API routes for a `Student` model.
-```
+
 ---
 
 ## 📂 Project Structure
+
 ```
-backend-hands-on/
+prisma-backend-postgres/
 ├─ dist/              
 ├─ node_modules/
 ├─ prisma/            # Prisma schema, migrations & seed data
@@ -19,8 +20,7 @@ backend-hands-on/
 ├─ tsconfig.json     
 ├─ package.json
 └─ package-lock.json
-
-````
+```
 
 ---
 
@@ -29,9 +29,9 @@ backend-hands-on/
 ### 1. Clone and Install
 ```bash
 git clone <repo-url>
-cd backend-hands-on
+cd prisma-backend-postgres
 npm install
-````
+```
 
 ### 2. Configure Database
 
@@ -150,6 +150,6 @@ Also can manage it via CLI if you likely to manage it here:
 
 Arch Linux | TypeScript | Prisma | PostgreSQL
 
-Always fell free to discuss...
+Always feel free to discuss...
 
 ---
