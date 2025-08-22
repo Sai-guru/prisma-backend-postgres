@@ -3,8 +3,6 @@
 A simple CRUD backend built with **Express**, **TypeScript**, and **Prisma ORM**, connected to a **Neon PostgreSQL (cloud DB)**.  
 This project demonstrates schema management, migrations, seeding, and REST API routes for a `Student` model.
 ```
----
-
 ## 📂 Project Structure
 
 backend-jwtAuth/
