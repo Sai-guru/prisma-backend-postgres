@@ -7,18 +7,16 @@ This project demonstrates schema management, migrations, seeding, and REST API r
 ```
 ## 📂 Project Structure
 
-backend-hands-on/
-├─ dist/              #build
-├─ node_modules/      
-├─ prisma/            # Prisma schema, migrations & seed data
-│   ├─ migrations/
-│   ├─ schema.prisma  #our schema
-│   └─ seed.ts        #data samples to load
-├─ routes.ts          # all routes handling
-├─ server.ts          #entry file
-├─ tsconfig.json      #Typescript configurations
-├─ package.json       
-└─ package-lock.json 
+backend-jwtAuth/
+├── prisma/
+│   ├── schema.prisma         # Prisma schema
+│   ├── seed.ts               # Seed script
+│   └── migrations/           # Prisma migrations
+├── routes.ts                 # Auth and user routes
+├── server.ts                 # Express app entry point
+├── package.json              # Project config and dependencies
+├── tsconfig.json             # TypeScript config
+├── .env                      # Environment variables
 
 ````
 
